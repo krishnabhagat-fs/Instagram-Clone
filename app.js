@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 8000;
 const mongoose = require('mongoose');
+require('./models/user')
 //const {MONGOURI} = require('./keys');
 //console.log("This is Mongouri",MONGOURI);
 const uri = "mongodb+srv://Krish:7Jnip4Q74JTLcR0P@cluster0.og3ng.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
