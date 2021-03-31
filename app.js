@@ -5,6 +5,10 @@ const mongoose = require('mongoose');
 require('./models/user')
 //const {MONGOURI} = require('./keys');
 //console.log("This is Mongouri",MONGOURI);
+app.use(express.json())
+app.use(require('./routes/auth'))
+
+
 const uri = "mongodb+srv://Krish:7Jnip4Q74JTLcR0P@cluster0.og3ng.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(uri,{
     useNewUrlParser: true ,
